@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!-- DRAFT — replace placeholder content before going live -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan Your Trip — Travels with Kenzie</title>
+  <meta name="description" content="Disney days, cruise nights, and more. Tell me about your dream trip and I'll respond within 48 hours with next steps.">
+  <meta name="theme-color" content="#1a2a4a">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&family=Allura&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<div class="draft-banner">
+  DRAFT — placeholder content. Wire the form to a real backend before going live. <code>&lt;!-- TODO --&gt;</code> markers inline.
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <svg class="mark" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M12 2 L14.2 9.4 L22 10.2 L16 15.4 L17.6 23 L12 19 L6.4 23 L8 15.4 L2 10.2 L9.8 9.4 Z" fill="#D4A574"/>
+      </svg>
+      Travels with Kenzie
+    </a>
+    <nav class="primary" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="plan-trip.html" class="active">Plan Your Trip</a>
+      <a href="current-clients.html">Current Clients</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom: clamp(32px, 5vw, 56px);">
+  <div class="container" style="display:block; text-align:center;">
+    <div class="eyebrow">Plan Your Trip</div>
+    <h1>Tell me about the trip.</h1>
+    <p class="tagline" style="max-width: 680px; margin: 0 auto 12px;">Disney days, cruise nights, or something else entirely. Big idea or fully formed — both are fine. Start anywhere and I'll take it from there.</p>
+  </div>
+</section>
+
+<section class="tight fade-in" style="padding-top: 0;">
+  <div class="container">
+    <div class="section-head" style="margin-bottom: 16px;">
+      <span class="eyebrow">What I plan</span>
+      <h2>Pick a starting point</h2>
+      <p class="lead">Tap a category to prefill the form, or skip ahead and just fill it out. My specialty is Disney parks and cruises — but I'll happily plan beyond them.</p>
+    </div>
+    <div class="services">
+      <a href="#inquiry" class="service featured" data-prefill="Walt Disney World">
+        <span class="icon">&#10024;</span>
+        Walt Disney World
+      </a>
+      <a href="#inquiry" class="service featured" data-prefill="Disneyland">
+        <span class="icon">&#10024;</span>
+        Disneyland
+      </a>
+      <a href="#inquiry" class="service featured" data-prefill="Disney Cruise Line">
+        <span class="icon">&#10024;</span>
+        Disney Cruise Line
+      </a>
+      <a href="#inquiry" class="service" data-prefill="Cruise (Royal Caribbean / Carnival / NCL / Virgin / other)">
+        <span class="icon">&#10024;</span>
+        Other Cruises
+      </a>
+      <a href="#inquiry" class="service" data-prefill="Universal Studios">
+        <span class="icon">&#10024;</span>
+        Universal Studios
+      </a>
+      <a href="#inquiry" class="service secondary" data-prefill="All-inclusive resort">
+        <span class="icon">&#10022;</span>
+        All-Inclusive Resorts
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="inquiry" class="fade-in" style="padding-top: 20px;">
+  <div class="container narrow">
+    <div class="section-head">
+      <span class="eyebrow">Dream Trip Inquiry</span>
+      <h2>The form</h2>
+      <p class="lead">Takes about 5 minutes. Skip anything that doesn't fit yet.</p>
+    </div>
+
+    <!-- TODO: wire to Google Form, Tally, or Typeform -->
+    <form class="inquiry-form" action="#" method="post" onsubmit="event.preventDefault(); alert('Form is a placeholder — wire to Google Form, Tally, or Typeform before going live.');">
+
+      <div class="field">
+        <label for="full-name">1. Full name</label>
+        <input type="text" id="full-name" name="full_name" required>
+      </div>
+
+      <div class="field">
+        <label for="email">2. Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="field">
+        <label for="phone">3. Phone</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+
+      <div class="field">
+        <label for="dream-destination">4. Where do you want to go?</label>
+        <input type="text" id="dream-destination" name="destination" placeholder="A place, a vibe, or 'I need ideas'">
+      </div>
+
+      <div class="field">
+        <label for="dates">5. Travel-date window + flexibility</label>
+        <input type="text" id="dates" name="dates" placeholder="e.g. last week of October, flexible by 3–4 days">
+      </div>
+
+      <div class="field">
+        <label for="travelers">6. Number of travelers + ages</label>
+        <input type="text" id="travelers" name="travelers" placeholder="e.g. 2 adults (35, 33) + 2 kids (8, 5)">
+      </div>
+
+      <div class="field">
+        <label>7. Special occasion?</label>
+        <div class="choice-group">
+          <label class="choice"><input type="checkbox" name="occasion" value="Honeymoon"><span>Honeymoon</span></label>
+          <label class="choice"><input type="checkbox" name="occasion" value="Anniversary"><span>Anniversary</span></label>
+          <label class="choice"><input type="checkbox" name="occasion" value="Milestone Birthday"><span>Milestone Birthday</span></label>
+          <label class="choice"><input type="checkbox" name="occasion" value="Family Reunion"><span>Family Reunion</span></label>
+          <label class="choice"><input type="checkbox" name="occasion" value="Just Because"><span>Just Because</span></label>
+          <label class="choice"><input type="checkbox" name="occasion" value="Other"><span>Other</span></label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>8. Budget range</label>
+        <div class="choice-group">
+          <label class="choice"><input type="radio" name="budget" value="Under 3K"><span>Under $3K</span></label>
+          <label class="choice"><input type="radio" name="budget" value="3-6K"><span>$3K–$6K</span></label>
+          <label class="choice"><input type="radio" name="budget" value="6-10K"><span>$6K–$10K</span></label>
+          <label class="choice"><input type="radio" name="budget" value="10K+"><span>$10K+</span></label>
+          <label class="choice"><input type="radio" name="budget" value="Unsure"><span>Unsure</span></label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="referral">9. How did you hear about me?</label>
+        <input type="text" id="referral" name="referral" placeholder="A friend, Instagram, TikTok, etc.">
+      </div>
+
+      <div class="field">
+        <label for="notes">10. Anything else I should know?</label>
+        <textarea id="notes" name="notes" placeholder="Mobility needs, dietary restrictions, must-haves, hard nos, etc."></textarea>
+      </div>
+
+      <p class="reassurance">I'll respond within 48 hours.</p>
+
+      <div class="submit-row">
+        <button type="submit" class="btn btn-primary">Send My Dream Trip</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3 style="font-family: var(--font-display); font-weight: 500; margin-bottom: 8px;">Travels with Kenzie</h3>
+        <p style="color: rgba(250,245,236,0.82); font-size: 15px;">Makenzie Tiller<br>Travel Advisor with Magical Travel Associates</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>[REPLACE: phone]</li>
+          <li><a href="mailto:mtiller@magicalta.com">mtiller@magicalta.com</a> <span class="muted">(TBD)</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Find me</h4>
+        <ul>
+          <li><a href="#" rel="noopener">Facebook</a></li>
+          <li><a href="https://instagram.com/kenzie_tay" rel="noopener">Instagram @kenzie_tay</a></li>
+          <li><a href="https://tiktok.com/@kenzie_tay" rel="noopener">TikTok @kenzie_tay</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <p class="disclosure">Makenzie Tiller is an independent Travel Advisor affiliated with Magical Travel Associates. Florida Seller of Travel registration and additional disclosures: [REPLACE].</p>
+      <p>© <span id="yr"></span> Makenzie Tiller. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+<script src="assets/scroll.js"></script>
+</body>
+</html>
