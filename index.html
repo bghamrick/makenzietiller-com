@@ -5,9 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
-  <title>Travels with Kenzie — Travel Advisor with Magical Travel Associates</title>
-  <meta name="description" content="Makenzie Tiller, Travel Advisor with Magical Travel Associates. Castle stays, open seas, zero stress. Disney days and cruise nights, planned with care.">
+  <title>Travels with Makenzie — Travel Advisor with Magical Travel Associates</title>
+  <meta name="description" content="Makenzie Tiller, Travel Advisor with Magical Travel Associates. I help you plan Universal, Disney, and Royal Caribbean vacations — completely free. You pay the same price you'd pay booking it yourself.">
   <meta name="theme-color" content="#1a2a4a">
+  <meta property="og:title" content="Travels with Makenzie — Travel Advisor with Magical Travel Associates">
+  <meta property="og:description" content="Your Universal, Disney, or Royal Caribbean vacation — planned for you, completely free.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://makenzietiller.com/">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,27 +24,29 @@
   DRAFT — placeholder content. Replace bracketed <code>[REPLACE: …]</code> blocks before going live.
 </div>
 
+<!-- =========================================================
+     NAV — brand + single CTA, no menu links
+     ========================================================= -->
 <header class="site-header">
   <div class="container">
-    <a href="index.html" class="brand">
+    <a href="#top" class="brand">
       <svg class="mark" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path d="M12 2 L14.2 9.4 L22 10.2 L16 15.4 L17.6 23 L12 19 L6.4 23 L8 15.4 L2 10.2 L9.8 9.4 Z" fill="#D4A574"/>
       </svg>
-      Travels with Kenzie
+      Travels with Makenzie
     </a>
     <nav class="primary" aria-label="Primary">
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="plan-trip.html">Plan Your Trip</a>
-      <a href="current-clients.html">Current Clients</a>
+      <a href="#plan" class="btn btn-primary nav-cta">Plan Your Trip</a>
     </nav>
   </div>
 </header>
 
+<span id="top"></span>
+
 <!-- =========================================================
-     HERO — magical (starry night → ocean, castle + cruise ship)
+     1. HERO + VIDEO WELCOME
      ========================================================= -->
-<section class="hero hero-magic">
+<section class="hero hero-magic hero-funnel">
   <!-- starfield over the whole hero -->
   <div class="starfield" aria-hidden="true">
     <span class="star bright s1">&#10024;</span>
@@ -62,236 +68,69 @@
     <span class="star tiny s17">&#8902;</span>
   </div>
 
-  <div class="container">
-    <div class="hero-copy">
+  <div class="container hero-funnel-inner">
+    <div class="hero-copy center">
       <div class="eyebrow">Travel Advisor with Magical Travel Associates</div>
       <h1>
-        Travels with Kenzie
-        <span class="script-flourish">happily ever after</span>
+        Your Universal, Disney, or Royal&nbsp;Caribbean vacation
+        <span class="script-flourish">planned for you, completely free</span>
       </h1>
-      <p class="tagline">Castle stays. Open seas. Zero stress.</p>
-      <p class="credentials">Disney days &amp; Cruise nights — planned with care</p>
-      <div class="cta-row">
-        <a href="plan-trip.html" class="btn btn-primary">Plan Your Trip</a>
-        <a href="about.html" class="btn btn-secondary">About Me</a>
-        <a href="current-clients.html" class="btn btn-ghost">Current Clients</a>
-      </div>
+      <p class="tagline">I do the research, build the day-by-day plan, and handle the bookings — so you just show up and enjoy the trip.</p>
     </div>
 
-    <!-- Castle + cruise scene (right column).
-         Castle: original 5-turret fairytale silhouette, NOT Cinderella Castle.
-         Cruise ship: original generic liner profile, NOT a DCL-specific design.
-         Both authored from scratch — zero IP infringement. -->
-    <div class="magic-scene" aria-hidden="true">
-      <div class="scene-stars">
-        <span class="star bright a1">&#10024;</span>
-        <span class="star tiny a2">&#8902;</span>
-        <span class="star a3">&#10022;</span>
-        <span class="star tiny a4">&#8902;</span>
-        <span class="star a5">&#10022;</span>
-        <span class="star bright a6">&#10024;</span>
-        <span class="star tiny a7">&#8902;</span>
-        <span class="star a8">&#10022;</span>
-        <span class="star tiny a9">&#8902;</span>
-        <span class="star a10">&#10022;</span>
-        <span class="star tiny a11">&#8902;</span>
-        <span class="star a12">&#10022;</span>
+    <!-- =========================================================
+         MOCK VIDEO PLAYER — 16:9, drop-in poster + play button.
+         REPLACE: drop Makenzie's photo/video here; poster image goes in #welcome-video-poster
+         ========================================================= -->
+    <div class="welcome-video">
+      <div class="video-frame">
+        <div id="welcome-video-poster" class="video-poster" aria-hidden="true"></div>
+        <button class="video-play" type="button" aria-label="Play welcome video">
+          <span class="play-icon">&#9654;</span>
+        </button>
       </div>
-      <svg class="scene-art" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMax meet" role="img" aria-label="Generic fairytale castle silhouette above a calm sea with a cruise ship">
-        <defs>
-          <linearGradient id="moonGrad" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#F2D89C"/>
-            <stop offset="100%" stop-color="#E8C77E"/>
-          </linearGradient>
-          <linearGradient id="seaGrad" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#163B53" stop-opacity="0.0"/>
-            <stop offset="40%" stop-color="#163B53" stop-opacity="0.9"/>
-            <stop offset="100%" stop-color="#0F1A33"/>
-          </linearGradient>
-          <linearGradient id="castleGrad" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#0F1A33"/>
-            <stop offset="100%" stop-color="#1a2a4a"/>
-          </linearGradient>
-        </defs>
+      <p class="video-caption">A quick hello from Makenzie.</p>
+    </div>
 
-        <!-- moon glow halo -->
-        <circle cx="305" cy="118" r="58" fill="#F2D89C" opacity="0.18"/>
-        <circle cx="305" cy="118" r="40" fill="#F2D89C" opacity="0.22"/>
-        <!-- moon -->
-        <circle cx="305" cy="118" r="28" fill="url(#moonGrad)"/>
-        <circle cx="313" cy="110" r="22" fill="#1a2a4a" opacity="0.35"/>
-
-        <!-- distant rolling hills (silhouettes) -->
-        <path d="M 0 360 Q 80 330 160 350 Q 240 370 320 340 Q 380 322 400 332 L 400 380 L 0 380 Z"
-              fill="#0F1A33" opacity="0.7"/>
-
-        <!-- =========================================================
-             CASTLE — generic 5-turret fairytale silhouette.
-             Asymmetric, no parapets, no wing structures, no single
-             dominant center spire matching Cinderella Castle's profile.
-             Author: Felix (original work), 2026-05-25.
-             ========================================================= -->
-        <g fill="url(#castleGrad)">
-          <!-- main keep body -->
-          <rect x="158" y="240" width="84" height="130"/>
-          <!-- crenellation tops on keep -->
-          <rect x="158" y="234" width="12" height="10"/>
-          <rect x="178" y="234" width="12" height="10"/>
-          <rect x="198" y="234" width="12" height="10"/>
-          <rect x="218" y="234" width="12" height="10"/>
-          <!-- left tower (medium) -->
-          <rect x="124" y="262" width="34" height="108"/>
-          <polygon points="124,262 158,262 141,222"/>
-          <!-- right tower (medium) -->
-          <rect x="242" y="262" width="34" height="108"/>
-          <polygon points="242,262 276,262 259,222"/>
-          <!-- far-left small tower -->
-          <rect x="98" y="296" width="26" height="74"/>
-          <polygon points="98,296 124,296 111,266"/>
-          <!-- far-right small tower -->
-          <rect x="276" y="296" width="26" height="74"/>
-          <polygon points="276,296 302,296 289,266"/>
-          <!-- thin tall spire (off-center, between keep and right tower) -->
-          <rect x="208" y="170" width="14" height="70"/>
-          <polygon points="208,170 222,170 215,138"/>
-          <!-- second thin spire (left of center, shorter) -->
-          <rect x="178" y="194" width="12" height="46"/>
-          <polygon points="178,194 190,194 184,168"/>
-          <!-- flag pole + pennant on tallest spire -->
-          <rect x="214.5" y="118" width="1.4" height="22" fill="#E8C77E"/>
-          <polygon points="216,120 226,124 216,128" fill="#E8C77E"/>
-        </g>
-
-        <!-- castle window glow accents -->
-        <g fill="#E8C77E" opacity="0.85">
-          <rect x="194" y="270" width="6"  height="10" rx="1"/>
-          <rect x="200" y="270" width="6"  height="10" rx="1"/>
-          <rect x="170" y="300" width="6"  height="10" rx="1"/>
-          <rect x="218" y="300" width="6"  height="10" rx="1"/>
-          <rect x="135" y="290" width="5"  height="8"  rx="1"/>
-          <rect x="252" y="290" width="5"  height="8"  rx="1"/>
-          <rect x="106" y="318" width="4"  height="7"  rx="1"/>
-          <rect x="284" y="318" width="4"  height="7"  rx="1"/>
-          <rect x="213" y="200" width="4"  height="6"  rx="1"/>
-        </g>
-
-        <!-- castle base shadow on hill -->
-        <ellipse cx="200" cy="375" rx="120" ry="6" fill="#0F1A33" opacity="0.7"/>
-
-        <!-- =========================================================
-             SEA — gradient water below the horizon.
-             ========================================================= -->
-        <rect x="0" y="375" width="400" height="125" fill="url(#seaGrad)"/>
-
-        <!-- moonlight ripple on water -->
-        <g fill="#F2D89C" opacity="0.18">
-          <ellipse cx="305" cy="395" rx="32" ry="2.5"/>
-          <ellipse cx="305" cy="408" rx="46" ry="2"/>
-          <ellipse cx="305" cy="422" rx="60" ry="1.8"/>
-          <ellipse cx="305" cy="438" rx="74" ry="1.6"/>
-        </g>
-
-        <!-- =========================================================
-             CRUISE SHIP — generic ocean liner silhouette.
-             Hull + tiered superstructure + 2 plain funnels.
-             NOT Disney Cruise Line: no red/yellow trim, no mickey
-             funnel cap, no distinctive bow shape.
-             Author: Felix (original work), 2026-05-25.
-             ========================================================= -->
-        <g transform="translate(34, 412)">
-          <!-- hull -->
-          <path d="M 0 22 L 8 32 L 152 32 L 168 22 L 156 18 L 12 18 Z" fill="#0F1A33"/>
-          <!-- main superstructure block -->
-          <rect x="20" y="6" width="124" height="12" fill="#1a2a4a"/>
-          <!-- second deck -->
-          <rect x="34" y="-2" width="96" height="8" fill="#2A3B66"/>
-          <!-- wheelhouse -->
-          <rect x="48" y="-8" width="64" height="6" fill="#2A3B66"/>
-          <!-- two funnels -->
-          <rect x="60" y="-20" width="10" height="12" fill="#2A3B66"/>
-          <rect x="90" y="-20" width="10" height="12" fill="#2A3B66"/>
-          <!-- single mast aft -->
-          <rect x="126" y="-18" width="1.4" height="14" fill="#2A3B66"/>
-          <!-- porthole rows (warm glow) -->
-          <g fill="#E8C77E" opacity="0.9">
-            <rect x="24" y="9"  width="3" height="3" rx="0.5"/>
-            <rect x="32" y="9"  width="3" height="3" rx="0.5"/>
-            <rect x="40" y="9"  width="3" height="3" rx="0.5"/>
-            <rect x="48" y="9"  width="3" height="3" rx="0.5"/>
-            <rect x="56" y="9"  width="3" height="3" rx="0.5"/>
-            <rect x="64" y="9"  width="3" height="3" rx="0.5"/>
-            <rect x="72" y="9"  width="3" height="3" rx="0.5"/>
-            <rect x="80" y="9"  width="3" height="3" rx="0.5"/>
-            <rect x="88" y="9"  width="3" height="3" rx="0.5"/>
-            <rect x="96" y="9"  width="3" height="3" rx="0.5"/>
-            <rect x="104" y="9" width="3" height="3" rx="0.5"/>
-            <rect x="112" y="9" width="3" height="3" rx="0.5"/>
-            <rect x="120" y="9" width="3" height="3" rx="0.5"/>
-            <rect x="128" y="9" width="3" height="3" rx="0.5"/>
-            <rect x="136" y="9" width="3" height="3" rx="0.5"/>
-            <!-- second deck portholes -->
-            <rect x="40" y="1" width="2.5" height="2.5" rx="0.5"/>
-            <rect x="48" y="1" width="2.5" height="2.5" rx="0.5"/>
-            <rect x="56" y="1" width="2.5" height="2.5" rx="0.5"/>
-            <rect x="64" y="1" width="2.5" height="2.5" rx="0.5"/>
-            <rect x="72" y="1" width="2.5" height="2.5" rx="0.5"/>
-            <rect x="80" y="1" width="2.5" height="2.5" rx="0.5"/>
-            <rect x="88" y="1" width="2.5" height="2.5" rx="0.5"/>
-            <rect x="96" y="1" width="2.5" height="2.5" rx="0.5"/>
-            <rect x="104" y="1" width="2.5" height="2.5" rx="0.5"/>
-            <rect x="112" y="1" width="2.5" height="2.5" rx="0.5"/>
-            <rect x="120" y="1" width="2.5" height="2.5" rx="0.5"/>
-          </g>
-          <!-- ship reflection on water -->
-          <rect x="8" y="34" width="160" height="1.5" fill="#F2D89C" opacity="0.35"/>
-        </g>
-      </svg>
+    <div class="cta-row" style="justify-content:center;">
+      <a href="#plan" class="btn btn-primary">Plan Your Trip</a>
     </div>
   </div>
 </section>
 
 <!-- =========================================================
-     WHY WORK WITH ME — pillars
-     ========================================================= -->
-<section class="why fade-in sparkle-bg">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow"><span class="sparkles" aria-hidden="true"><span>&#10022;</span><span>&#10024;</span><span>&#10022;</span></span> Why work with me</span>
-      <h2>Trips planned by someone who knows the parks and the ships</h2>
-      <p class="lead">I'm a Travel Advisor with Magical Travel Associates, specializing in Disney vacations and cruises. I plan the kind of trip I'd want to come home to — well-organized, worth the time off, and easy to enjoy.</p>
-    </div>
-    <div class="pillars">
-      <div class="pillar">
-        <span class="sparkle">&#10024;</span>
-        <h3>Strategic Planning</h3>
-        <p>No guesswork, no missed windows. I map every step — booking dates, dining, transit, rope-drop strategy, port days — before you ever pack a bag.</p>
-      </div>
-      <div class="pillar">
-        <span class="sparkle">&#10024;</span>
-        <h3>Structured Process</h3>
-        <p>Clear timelines, simple forms, and a shared planning doc so you always know what's next and what's already handled.</p>
-      </div>
-      <div class="pillar">
-        <span class="sparkle">&#10024;</span>
-        <h3>Complimentary Services</h3>
-        <p>You get expert-level organization, personalized recommendations, and trip support at no additional cost. The supplier pays me, not you.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- =========================================================
-     WHY A DISNEY + CRUISE SPECIALIST?
+     2. THE 3 PILLARS — Universal / Disney / Royal Caribbean
      ========================================================= -->
 <section class="specialist-section fade-in">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow">Why a Disney + Cruise specialist?</span>
+      <span class="eyebrow">Universal · Disney · Royal Caribbean</span>
       <h2>Because the parks and the ships reward someone who knows them</h2>
-      <p class="lead">A generalist who books one Disney trip a year is guessing alongside you. I plan these trips constantly — for clients, friends, and family. I know the windows, the workarounds, and the small choices that change the whole trip.</p>
+      <p class="lead">A generalist who books one big trip a year is guessing alongside you. These are the trips I plan again and again — I know the windows, the workarounds, and the small choices that change the whole vacation.</p>
     </div>
 
-    <div class="specialist-grid">
+    <div class="specialist-grid three-up">
+      <div class="specialist-card">
+        <div class="icon-wrap" aria-hidden="true">
+          <!-- mini clapboard icon (original, generic — NOT a Universal trademark) -->
+          <svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#E8C77E">
+              <rect x="7" y="16" width="22" height="14" rx="1.5"/>
+              <polygon points="6,14 30,11 31,15 7,18"/>
+            </g>
+            <g fill="#1a2a4a">
+              <polygon points="10,14.6 12.4,14.3 11.0,17.3 8.6,17.6"/>
+              <polygon points="15,14.0 17.4,13.7 16.0,16.7 13.6,17.0"/>
+              <polygon points="20,13.4 22.4,13.1 21.0,16.1 18.6,16.4"/>
+              <polygon points="25,12.8 27.4,12.5 26.0,15.5 23.6,15.8"/>
+            </g>
+          </svg>
+        </div>
+        <h3>Universal Studios</h3>
+        <p>Orlando and Hollywood — park-day order, Express Pass math, the right hotel tier, and how to fold a Universal day into a wider trip without burning everyone out.</p>
+        <span class="label">the studios, mapped</span>
+      </div>
+
       <div class="specialist-card">
         <div class="icon-wrap" aria-hidden="true">
           <!-- mini castle icon (original, generic) -->
@@ -310,8 +149,8 @@
             </g>
           </svg>
         </div>
-        <h3>Disney days</h3>
-        <p>Walt Disney World, Disneyland, dining strategy, ride-priority logic, resort match, ticket math, the right number of park days for the right pace. The list is long; the value compounds.</p>
+        <h3>Disney</h3>
+        <p>Walt Disney World and Disneyland — dining strategy, ride-priority logic, resort match, ticket math, the right number of park days for the right pace. The list is long; the value compounds.</p>
         <span class="label">the parks, planned</span>
       </div>
 
@@ -328,26 +167,369 @@
             </g>
           </svg>
         </div>
-        <h3>Cruise nights</h3>
-        <p>Disney Cruise Line plus Royal Caribbean, Carnival, Norwegian, Virgin and more. Cabin category guidance, dining-rotation tips, port-day excursions, drink-package math, and the difference between a closed-loop and an open-loop cruise.</p>
+        <h3>Royal Caribbean</h3>
+        <p>Cabin category guidance, dining and drink-package math, port-day excursions, and the difference between a closed-loop and an open-loop cruise — so the ship works for your whole group.</p>
         <span class="label">the ships, sorted</span>
       </div>
     </div>
 
-    <p class="script-flourish">your magic, my logistics</p>
+    <div class="cta-row" style="justify-content:center; margin-top:36px;">
+      <a href="#plan" class="btn btn-primary">Plan Your Trip</a>
+    </div>
   </div>
 </section>
 
 <!-- =========================================================
-     SUB-CTA
+     3. PROBLEM / EMPATHY — before/after compare
      ========================================================= -->
-<section class="sub-cta fade-in tight">
-  <div class="container narrow center">
-    <h2>Have a trip in mind?</h2>
-    <p class="lead">Fill out the dream-trip inquiry and I'll respond within 48 hours.</p>
-    <div class="cta-row" style="justify-content:center;">
-      <a href="plan-trip.html" class="btn btn-primary">Start Your Trip</a>
+<section class="fade-in">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Sound familiar?</span>
+      <h2>Planning it yourself eats your time — and your trip</h2>
+      <p class="lead">Hours of research, endless tabs, conflicting advice, and the nagging worry you booked the wrong hotel or missed the dining window. It shouldn't take a second job to plan a vacation.</p>
     </div>
+
+    <div class="compare">
+      <div class="compare-col diy">
+        <h3>Planning it yourself</h3>
+        <ul>
+          <li>Drowning in options — which park, which ship, which hotel?</li>
+          <li>Hours of research squeezed in after work</li>
+          <li>Wasted park days from a bad day-order</li>
+          <li>Booking the wrong room category or resort tier</li>
+          <li>Missing dining reservations and ride windows</li>
+          <li>Surprise costs you didn't see coming</li>
+          <li>No one to call when something goes sideways</li>
+        </ul>
+      </div>
+      <div class="compare-col withme">
+        <h3>With Makenzie</h3>
+        <ul>
+          <li>One conversation, then I narrow it down for you</li>
+          <li>I do the research — you get your evenings back</li>
+          <li>A day-by-day plan built around crowds and pace</li>
+          <li>The right hotel and cabin for your group and budget</li>
+          <li>Dining and reservations handled at the right time</li>
+          <li>Clear costs up front, no surprises</li>
+          <li>Someone in your corner before, during, and after</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cta-row" style="justify-content:center; margin-top:36px;">
+      <a href="#plan" class="btn btn-primary">Plan Your Trip</a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     4. WHAT I DO FOR YOU — done-for-you value
+     ========================================================= -->
+<section class="fade-in sparkle-bg">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What I do for you</span>
+      <h2>The whole trip, handled</h2>
+      <p class="lead">You bring the idea. I turn it into a plan you can actually follow — and a vacation you don't have to manage.</p>
+    </div>
+    <div class="pillars">
+      <div class="pillar">
+        <span class="sparkle">&#10024;</span>
+        <h3>I research it all</h3>
+        <p>Parks, ships, resorts, dates, and seasons — I compare the options so you don't have to live in a hundred browser tabs.</p>
+      </div>
+      <div class="pillar">
+        <span class="sparkle">&#10024;</span>
+        <h3>I build your plan</h3>
+        <p>A clear day-by-day itinerary — park order, dining, transit, port days, rope-drop strategy — built around your group's pace and budget.</p>
+      </div>
+      <div class="pillar">
+        <span class="sparkle">&#10024;</span>
+        <h3>I handle the bookings</h3>
+        <p>Reservations, dining windows, and confirmations — booked at the right time and optimized for crowds, budget, and what matters most to you.</p>
+      </div>
+    </div>
+
+    <div class="cta-row" style="justify-content:center; margin-top:36px;">
+      <a href="#plan" class="btn btn-primary">Plan Your Trip</a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     5. HOW IT WORKS — 4 numbered steps
+     ========================================================= -->
+<section class="fade-in tight">
+  <div class="container narrow">
+    <div class="section-head">
+      <span class="eyebrow">How it works</span>
+      <h2>Four simple steps</h2>
+      <p class="lead">Low-pressure and mostly handled by me. Your part is the fun part.</p>
+    </div>
+    <div class="howit">
+      <div class="howit-step">
+        <span class="n">1</span>
+        <div>
+          <h3>Tell me about your trip</h3>
+          <p>Fill out the quick inquiry below — a big idea or a fully formed plan, both work.</p>
+        </div>
+      </div>
+      <div class="howit-step">
+        <span class="n">2</span>
+        <div>
+          <h3>I build your plan</h3>
+          <p>I research the options and put together a day-by-day plan tailored to your group, dates, and budget.</p>
+        </div>
+      </div>
+      <div class="howit-step">
+        <span class="n">3</span>
+        <div>
+          <h3>You review &amp; approve</h3>
+          <p>We adjust until it's exactly right. Nothing gets booked until you say go.</p>
+        </div>
+      </div>
+      <div class="howit-step">
+        <span class="n">4</span>
+        <div>
+          <h3>You go — I've got your back</h3>
+          <p>You travel. If anything comes up before or during the trip, I'm a text away.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-row" style="justify-content:center; margin-top:40px;">
+      <a href="#plan" class="btn btn-primary">Plan Your Trip</a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     6. WHY WORK WITH ME — authority (honest framing)
+     ========================================================= -->
+<section class="specialist-section fade-in">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow"><span class="sparkles" aria-hidden="true"><span>&#10022;</span><span>&#10024;</span><span>&#10022;</span></span> Why work with me</span>
+      <h2>A planner who specializes — and gives you real attention</h2>
+      <p class="lead">I'm a Travel Advisor with Magical Travel Associates. I focus on a few destinations and plan them well, so you get a planner who knows the details instead of a generalist learning on your dime.</p>
+    </div>
+    <div class="pillars">
+      <div class="pillar">
+        <span class="sparkle">&#10024;</span>
+        <h3>Focused expertise</h3>
+        <p>Universal (Orlando and Hollywood), Disney (Walt Disney World and Disneyland), and Royal Caribbean. I plan these often, so I know the windows and the workarounds.</p>
+      </div>
+      <div class="pillar">
+        <span class="sparkle">&#10024;</span>
+        <h3>Personal attention</h3>
+        <p>You work directly with me from first message to "welcome home." Your plan is built for your group — not pulled off a shelf.</p>
+      </div>
+      <div class="pillar">
+        <span class="sparkle">&#10024;</span>
+        <h3>Backed by a host agency</h3>
+        <p>I'm supported by Magical Travel Associates, with supplier relationships and resources behind every trip I plan.</p>
+      </div>
+    </div>
+
+    <p class="credential-note">[REPLACE: add specific credentials when ready — e.g. Disney College of Knowledge graduate, Universal &amp; Royal Caribbean training, number of trips planned. No fabricated numbers until Makenzie confirms.]</p>
+
+    <div class="cta-row" style="justify-content:center; margin-top:32px;">
+      <a href="#plan" class="btn btn-primary">Plan Your Trip</a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     7. SOCIAL PROOF — placeholder testimonials
+     ========================================================= -->
+<section class="fade-in sparkle-bg">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Kind words</span>
+      <h2>What travelers say</h2>
+      <p class="lead">Real reviews go here as Makenzie's clients come home happy.</p>
+    </div>
+    <div class="testimonials">
+      <figure class="testimonial">
+        <span class="quote-mark" aria-hidden="true">&#8220;</span>
+        <blockquote>[REPLACE: client testimonial — a few sentences about how the planning felt and how the trip went.]</blockquote>
+        <figcaption>[REPLACE: client first name + trip, e.g. "Sarah — Walt Disney World"]</figcaption>
+      </figure>
+      <figure class="testimonial">
+        <span class="quote-mark" aria-hidden="true">&#8220;</span>
+        <blockquote>[REPLACE: client testimonial — what surprised them, what they'd have missed on their own.]</blockquote>
+        <figcaption>[REPLACE: client first name + trip, e.g. "The Lopez family — Royal Caribbean"]</figcaption>
+      </figure>
+      <figure class="testimonial">
+        <span class="quote-mark" aria-hidden="true">&#8220;</span>
+        <blockquote>[REPLACE: client testimonial — why they'd book with Makenzie again.]</blockquote>
+        <figcaption>[REPLACE: client first name + trip, e.g. "Jenna — Universal Orlando"]</figcaption>
+      </figure>
+    </div>
+
+    <div class="cta-row" style="justify-content:center; margin-top:36px;">
+      <a href="#plan" class="btn btn-primary">Plan Your Trip</a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     8. THE "IT'S FREE" REVERSAL
+     ========================================================= -->
+<section class="reversal fade-in">
+  <div class="container narrow center">
+    <span class="eyebrow">The best part</span>
+    <h2>My planning service is completely free</h2>
+    <p class="reversal-lead">You pay the same price you'd pay booking it yourself — often less, never more. The research, the day-by-day plan, the bookings, the support: all of it at no extra cost to you.</p>
+    <div class="reversal-card">
+      <h3>So how do I get paid?</h3>
+      <p>The travel suppliers — the parks, resorts, and cruise lines — pay advisors a commission that's already built into the standard price. That price doesn't change whether you book through me or on your own. So you get an expert planner in the bargain, for free.</p>
+    </div>
+    <div class="cta-row" style="justify-content:center; margin-top:36px;">
+      <a href="#plan" class="btn btn-primary">Plan Your Trip</a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     9. FAQ
+     ========================================================= -->
+<section class="fade-in">
+  <div class="container narrow">
+    <div class="section-head">
+      <span class="eyebrow">Questions</span>
+      <h2>Good things to know</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Do I pay you anything?</summary>
+        <div class="answer"><p>No. My planning service is free to you. I'm paid a commission by the travel suppliers, and that commission is already built into the standard price of your trip.</p></div>
+      </details>
+      <details>
+        <summary>Does using you cost more than booking myself?</summary>
+        <div class="answer"><p>No — you pay the same price you'd pay booking directly, and often less when I can apply current promotions. You never pay more for working with me.</p></div>
+      </details>
+      <details>
+        <summary>How do you get paid?</summary>
+        <div class="answer"><p>The parks, resorts, and cruise lines pay advisors a commission out of the trip cost you'd be paying them anyway. It doesn't change your price — it just means you get a planner included.</p></div>
+      </details>
+      <details>
+        <summary>What if something goes wrong during my trip?</summary>
+        <div class="answer"><p>Text me first and I'll help sort it out — usually within the hour. For true emergencies (medical, theft, lost passport), call local emergency services first, then loop me in.</p></div>
+      </details>
+      <details>
+        <summary>Which destinations do you plan?</summary>
+        <div class="answer"><p>My focus is Universal Studios (Orlando and Hollywood), Disney (Walt Disney World and Disneyland), and Royal Caribbean cruises. I'm happy to plan beyond them too — just ask.</p></div>
+      </details>
+      <details>
+        <summary>How far in advance should I book?</summary>
+        <div class="answer"><p>The earlier the better — the best dining, excursions, and room categories go first, especially on holiday dates. As soon as you have a rough window, reach out and I'll tell you exactly when to lock things in.</p></div>
+      </details>
+      <details>
+        <summary>I'm not sure where to go yet — can you still help?</summary>
+        <div class="answer"><p>Absolutely. Bring a vibe, a budget, or just "we need a break" and I'll help you figure out the right trip. Start anywhere and I'll take it from there.</p></div>
+      </details>
+    </div>
+
+    <div class="cta-row" style="justify-content:center; margin-top:36px;">
+      <a href="#plan" class="btn btn-primary">Plan Your Trip</a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     10. FINAL RECAP CTA + THE FORM
+     ========================================================= -->
+<section id="plan" class="plan-section fade-in">
+  <div class="container narrow">
+    <div class="section-head">
+      <span class="eyebrow">Plan Your Trip</span>
+      <h2>A stress-free, expertly-planned trip — at no extra cost</h2>
+    </div>
+
+    <ul class="recap-list">
+      <li>I research the options so you don't have to</li>
+      <li>A day-by-day plan built around your group and budget</li>
+      <li>Bookings and reservations handled at the right time</li>
+      <li>Support before, during, and after your trip</li>
+      <li>Completely free — you pay the same price you'd pay yourself</li>
+    </ul>
+
+    <p class="lead center" style="margin-bottom: 28px;">Takes about 5 minutes. Skip anything that doesn't fit yet — I'll respond within 48 hours.</p>
+
+    <!-- TODO: wire to Google Form, Tally, or Typeform -->
+    <form class="inquiry-form" action="#" method="post" onsubmit="event.preventDefault(); alert('Form is a placeholder — wire to Google Form, Tally, or Typeform before going live.');">
+
+      <div class="field">
+        <label for="full-name">1. Full name</label>
+        <input type="text" id="full-name" name="full_name" required>
+      </div>
+
+      <div class="field">
+        <label for="email">2. Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="field">
+        <label for="phone">3. Phone</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+
+      <div class="field">
+        <label for="dream-destination">4. Where do you want to go?</label>
+        <input type="text" id="dream-destination" name="destination" placeholder="Universal, Disney, a cruise, or 'I need ideas'">
+      </div>
+
+      <div class="field">
+        <label for="dates">5. Travel-date window + flexibility</label>
+        <input type="text" id="dates" name="dates" placeholder="e.g. last week of October, flexible by 3–4 days">
+      </div>
+
+      <div class="field">
+        <label for="travelers">6. Number of travelers + ages</label>
+        <input type="text" id="travelers" name="travelers" placeholder="e.g. 2 adults (35, 33) + 2 kids (8, 5)">
+      </div>
+
+      <div class="field">
+        <label>7. Special occasion?</label>
+        <div class="choice-group">
+          <label class="choice"><input type="checkbox" name="occasion" value="Honeymoon"><span>Honeymoon</span></label>
+          <label class="choice"><input type="checkbox" name="occasion" value="Anniversary"><span>Anniversary</span></label>
+          <label class="choice"><input type="checkbox" name="occasion" value="Milestone Birthday"><span>Milestone Birthday</span></label>
+          <label class="choice"><input type="checkbox" name="occasion" value="Family Reunion"><span>Family Reunion</span></label>
+          <label class="choice"><input type="checkbox" name="occasion" value="Just Because"><span>Just Because</span></label>
+          <label class="choice"><input type="checkbox" name="occasion" value="Other"><span>Other</span></label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>8. Budget range</label>
+        <div class="choice-group">
+          <label class="choice"><input type="radio" name="budget" value="Under 3K"><span>Under $3K</span></label>
+          <label class="choice"><input type="radio" name="budget" value="3-6K"><span>$3K–$6K</span></label>
+          <label class="choice"><input type="radio" name="budget" value="6-10K"><span>$6K–$10K</span></label>
+          <label class="choice"><input type="radio" name="budget" value="10K+"><span>$10K+</span></label>
+          <label class="choice"><input type="radio" name="budget" value="Unsure"><span>Unsure</span></label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="referral">9. How did you hear about me?</label>
+        <input type="text" id="referral" name="referral" placeholder="A friend, Instagram, TikTok, etc.">
+      </div>
+
+      <div class="field">
+        <label for="notes">10. Anything else I should know?</label>
+        <textarea id="notes" name="notes" placeholder="Mobility needs, dietary restrictions, must-haves, hard nos, etc."></textarea>
+      </div>
+
+      <p class="reassurance">I'll respond within 48 hours.</p>
+
+      <div class="submit-row">
+        <button type="submit" class="btn btn-primary">Plan Your Trip</button>
+      </div>
+    </form>
   </div>
 </section>
 
@@ -358,13 +540,12 @@
   <div class="container">
     <div class="footer-grid">
       <div>
-        <h3 style="font-family: var(--font-display); font-weight: 500; margin-bottom: 8px;">Travels with Kenzie</h3>
+        <h3 style="font-family: var(--font-display); font-weight: 500; margin-bottom: 8px;">Travels with Makenzie</h3>
         <p style="color: rgba(250,245,236,0.82); font-size: 15px;">Makenzie Tiller<br>Travel Advisor with Magical Travel Associates</p>
       </div>
       <div>
         <h4>Contact</h4>
         <ul>
-          <li>[REPLACE: phone — e.g. (xxx) xxx-xxxx]</li>
           <li><a href="mailto:mtiller@magicalta.com">mtiller@magicalta.com</a> <span class="muted">(TBD)</span></li>
         </ul>
       </div>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" role="img" aria-label="Stylized movie clapboard">
+  <!--
+    UNIVERSAL PILLAR ICON — original film clapboard.
+    Generic movie-studio motif: a clapboard with a slanted hinged top bar.
+    NOT a Universal trademark — no globe, no rotating sphere, no wordmark,
+    no Harry Potter / Jurassic / Minion art. Author: Felix (original work), 2026-05-31.
+  -->
+  <g fill="#E8C77E">
+    <!-- board body -->
+    <rect x="7" y="16" width="22" height="14" rx="1.5"/>
+    <!-- hinged clapper top bar (slanted) -->
+    <polygon points="6,14 30,11 31,15 7,18"/>
+    <!-- clapper diagonal stripes (cut from the bar as negative-space teeth) -->
+  </g>
+  <g fill="#1a2a4a">
+    <!-- diagonal teeth on the clapper bar -->
+    <polygon points="10,14.6 12.4,14.3 11.0,17.3 8.6,17.6"/>
+    <polygon points="15,14.0 17.4,13.7 16.0,16.7 13.6,17.0"/>
+    <polygon points="20,13.4 22.4,13.1 21.0,16.1 18.6,16.4"/>
+    <polygon points="25,12.8 27.4,12.5 26.0,15.5 23.6,15.8"/>
+  </g>
+  <!-- film-strip perforation dots across the board face -->
+  <g fill="#1a2a4a" opacity="0.85">
+    <circle cx="11" cy="22" r="1.1"/>
+    <circle cx="15" cy="22" r="1.1"/>
+    <circle cx="19" cy="22" r="1.1"/>
+    <circle cx="23" cy="22" r="1.1"/>
+    <circle cx="11" cy="27" r="1.1"/>
+    <circle cx="15" cy="27" r="1.1"/>
+    <circle cx="19" cy="27" r="1.1"/>
+    <circle cx="23" cy="27" r="1.1"/>
+  </g>
+</svg>

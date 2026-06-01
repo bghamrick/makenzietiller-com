@@ -1,5 +1,5 @@
 /* =========================================================
-   Travels with Kenzie — Disney + Cruise specialist
+   Travels with Makenzie — Universal / Disney / Royal Caribbean
    Palette: sea-blue / midnight magic + warm cream + gold + blush.
    Type: Playfair Display (display) + Inter (body) + Allura (script flourish).
    ========================================================= */
@@ -590,7 +590,7 @@ section.tight { padding: clamp(40px, 6vw, 64px) 0; }
 .pillar p  { color: var(--ink-mid); margin: 0; font-size: 16px; }
 
 /* =========================================================
-   Why-specialist callout (Disney + Cruise)
+   Why-specialist callout (Universal / Disney / Royal Caribbean)
    ========================================================= */
 .specialist-section {
   background:
@@ -613,6 +613,8 @@ section.tight { padding: clamp(40px, 6vw, 64px) 0; }
   margin-top: clamp(32px, 5vw, 48px);
 }
 @media (max-width: 760px) { .specialist-grid { grid-template-columns: 1fr; } }
+.specialist-grid.three-up { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 880px) { .specialist-grid.three-up { grid-template-columns: 1fr; } }
 .specialist-card {
   background: rgba(250, 245, 236, 0.06);
   border: 1px solid rgba(232, 199, 126, 0.22);
@@ -1054,3 +1056,278 @@ footer.site-footer .container { position: relative; z-index: 1; }
 .mt-0 { margin-top: 0; }
 .mb-0 { margin-bottom: 0; }
 .muted { color: var(--ink-soft); }
+
+/* =========================================================
+   FUNNEL ADDITIONS (single-page index)
+   ========================================================= */
+
+/* Nav CTA button override — smaller, fits in the header bar */
+nav.primary .nav-cta {
+  padding: 11px 22px;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sea-deep);
+}
+nav.primary .nav-cta:hover { color: var(--midnight); }
+
+/* --- Hero (funnel, single-column centered) --- */
+.hero-funnel .container.hero-funnel-inner {
+  display: block;
+  max-width: var(--narrow);
+  text-align: center;
+}
+.hero-funnel .hero-copy { margin-bottom: clamp(28px, 4vw, 40px); }
+.hero-funnel h1 { margin-bottom: 18px; }
+
+/* --- Mock video player --- */
+.welcome-video { margin: 0 auto clamp(24px, 4vw, 36px); }
+.video-frame {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 30px 70px -20px rgba(15, 26, 51, 0.6), inset 0 0 0 1px rgba(232, 199, 126, 0.28);
+}
+.video-poster {
+  position: absolute;
+  inset: 0;
+  /* Makenzie's welcome-video poster frame. */
+  background-image:
+    linear-gradient(180deg, rgba(8,14,28,0.10) 0%, rgba(8,14,28,0.02) 42%, rgba(8,14,28,0.42) 100%),
+    url("makenzie-welcome.jpg");
+  background-size: cover, cover;
+  background-position: center 55%, center 55%;
+  background-repeat: no-repeat, no-repeat;
+  filter: saturate(1.03);
+}
+.video-poster::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 26, 51, 0.22);
+}
+.video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(64px, 9vw, 84px);
+  height: clamp(64px, 9vw, 84px);
+  border-radius: 50%;
+  border: 2px solid rgba(250, 245, 236, 0.85);
+  background: rgba(212, 165, 116, 0.92);
+  color: var(--midnight);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 40px -8px rgba(0,0,0,0.5);
+  transition: transform 0.15s var(--ease), background 0.2s var(--ease), box-shadow 0.2s var(--ease);
+}
+.video-play:hover {
+  background: var(--gold-bright);
+  transform: translate(-50%, -50%) scale(1.06);
+  box-shadow: 0 16px 50px -8px rgba(232, 199, 126, 0.55);
+}
+.video-play .play-icon {
+  font-size: clamp(22px, 3vw, 30px);
+  line-height: 1;
+  margin-left: 4px; /* optically center the triangle */
+}
+.video-caption {
+  text-align: center;
+  margin: 14px 0 0;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 16px;
+  color: var(--cream-warm);
+  opacity: 0.92;
+}
+
+/* --- Problem / before-after compare --- */
+.compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(18px, 3vw, 28px);
+}
+@media (max-width: 760px) { .compare { grid-template-columns: 1fr; } }
+.compare-col {
+  border-radius: var(--radius);
+  padding: clamp(24px, 3vw, 34px);
+  border: 1px solid var(--line);
+}
+.compare-col h3 { margin-bottom: 16px; }
+.compare-col ul { list-style: none; padding: 0; margin: 0; }
+.compare-col li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.compare-col li::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+}
+.compare-col.diy {
+  background: var(--cream-warm);
+}
+.compare-col.diy h3 { color: var(--coral); }
+.compare-col.diy li { color: var(--ink-mid); }
+.compare-col.diy li::before { content: "\2715"; color: var(--coral); }
+.compare-col.withme {
+  background: linear-gradient(180deg, var(--midnight) 0%, var(--sea-deep) 100%);
+  border-color: rgba(232, 199, 126, 0.32);
+}
+.compare-col.withme h3 { color: var(--gold-bright); }
+.compare-col.withme li { color: rgba(250, 245, 236, 0.9); }
+.compare-col.withme li::before { content: "\2713"; color: var(--gold-bright); }
+
+/* --- How it works (numbered steps) --- */
+.howit {
+  display: grid;
+  gap: 16px;
+  margin-top: clamp(28px, 4vw, 40px);
+}
+.howit-step {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: clamp(20px, 3vw, 28px);
+}
+.howit-step .n {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--midnight) 0%, var(--sea-deep) 100%);
+  color: var(--gold-bright);
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+.howit-step h3 { margin: 0 0 6px; }
+.howit-step p { margin: 0; color: var(--ink-mid); font-size: 16px; }
+
+/* --- Credential note (authority section) --- */
+.credential-note {
+  max-width: 640px;
+  margin: clamp(28px, 4vw, 40px) auto 0;
+  padding: 16px 22px;
+  border: 1.5px dashed rgba(232, 199, 126, 0.6);
+  border-radius: var(--radius);
+  background: rgba(250, 245, 236, 0.06);
+  color: rgba(250, 245, 236, 0.85);
+  font-style: italic;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* --- Testimonials --- */
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(18px, 3vw, 28px);
+}
+@media (max-width: 880px) { .testimonials { grid-template-columns: 1fr; } }
+.testimonial {
+  position: relative;
+  margin: 0;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: clamp(26px, 3vw, 34px) clamp(22px, 3vw, 28px) clamp(22px, 3vw, 28px);
+  box-shadow: 0 16px 40px -28px rgba(22, 59, 83, 0.25);
+}
+.testimonial .quote-mark {
+  font-family: var(--font-display);
+  font-size: 3.4rem;
+  line-height: 0.6;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 8px;
+}
+.testimonial blockquote {
+  margin: 0 0 16px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ink-mid);
+}
+.testimonial figcaption {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--sea-deep);
+  letter-spacing: 0.02em;
+}
+
+/* --- "It's free" reversal --- */
+.reversal {
+  background:
+    radial-gradient(700px 400px at 100% 0%, rgba(232, 199, 126, 0.18), transparent 60%),
+    radial-gradient(600px 360px at 0% 100%, rgba(232, 165, 151, 0.14), transparent 60%),
+    linear-gradient(180deg, var(--midnight-deep) 0%, var(--midnight) 100%);
+  color: var(--cream);
+}
+.reversal .eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--gold-bright);
+  font-weight: 600;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+.reversal h2 { color: var(--cream); }
+.reversal .reversal-lead {
+  max-width: 620px;
+  margin: 8px auto 0;
+  color: rgba(250, 245, 236, 0.9);
+  font-size: 19px;
+}
+.reversal-card {
+  max-width: 620px;
+  margin: clamp(28px, 4vw, 40px) auto 0;
+  text-align: left;
+  background: rgba(250, 245, 236, 0.06);
+  border: 1px solid rgba(232, 199, 126, 0.3);
+  border-radius: var(--radius);
+  padding: clamp(24px, 3vw, 32px);
+  backdrop-filter: blur(4px);
+}
+.reversal-card h3 { color: var(--gold-bright); margin-bottom: 10px; }
+.reversal-card p { margin: 0; color: rgba(250, 245, 236, 0.85); font-size: 16px; }
+
+/* --- Final recap list + plan section --- */
+.recap-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto clamp(24px, 4vw, 36px);
+  max-width: 540px;
+}
+.recap-list li {
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: 12px;
+  font-size: 17px;
+  color: var(--ink-mid);
+}
+.recap-list li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--gold-deep);
+  font-weight: 700;
+  font-size: 18px;
+}

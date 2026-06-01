@@ -1,4 +1,4 @@
-// Travels with Kenzie — small UI helpers
+// Travels with Makenzie — small UI helpers
 // Scroll fade-in + service selector hover state.
 
 (function () {
